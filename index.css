@@ -1,0 +1,45 @@
+body {
+  background-color: #222222;
+  color: #EAEAEA;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+/*Indentation des sections*/
+section {
+  margin-left: 50px;
+}
+
+a {
+  color: #EAEAEA;
+}
+
+#mainDiv {
+  display: flex;
+}
+
+#sidebar {
+  border: 1px solid #EAEAEA;
+  padding: 10px;
+}
+
+#content {
+  flex-grow: 1;
+}
+
+/*Enlève le style initial d'une liste*/
+nav ul {padding-left: 0px;}
+nav ul li {  list-style-type: none;}
+
+/*Espacement entre les items principaux de la liste*/
+nav ul > li {
+  margin-bottom: 10px;
+}
+
+/*Indentation des sous items de liste*/
+nav ul ul {
+  margin-left: 15px;
+}
