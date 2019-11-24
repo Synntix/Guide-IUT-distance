@@ -13,6 +13,10 @@ section {
   margin-left: 50px;
 }
 
+#content > section {
+  margin-left: 10px;
+}
+
 a {
   color: #EAEAEA;
 }
@@ -24,6 +28,7 @@ a {
 #sidebar {
   border: 1px solid #EAEAEA;
   padding: 10px;
+  width: 220px;
 }
 
 #content {
@@ -42,4 +47,41 @@ nav ul > li {
 /*Indentation des sous items de liste*/
 nav ul ul {
   margin-left: 15px;
+}
+
+.imageRight {
+  float: right;
+  border: 1px solid #707070;
+}
+
+.imageRight div {
+  margin: 2px;
+  margin-top: 0px;
+  border: 1px solid #707070;
+}
+
+.imageRight div p {
+  margin: 10px;
+}
+
+section {
+  clear: right;
+}
+
+dl {
+  margin: 0px;
+}
+
+dt {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 1.1em;
+  background-color: #191919;
+  border-radius: 3px;
+  padding: 0.2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 1.1em;
 }
