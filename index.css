@@ -10,15 +10,21 @@ h1 {
 
 /*Indentation des sections*/
 section {
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
+/*Marge entre la sidebar et le contenu*/
 #content > section {
-  margin-left: 10px;
+  margin-left: 20px;
+}
+
+/*Espace entre deux sous sections*/
+#content > section section {
+  margin-bottom: 50px;
 }
 
 a {
-  color: #EAEAEA;
+  color: #ffa500;
 }
 
 #mainDiv {
@@ -28,25 +34,41 @@ a {
 #sidebar {
   border: 1px solid #EAEAEA;
   padding: 10px;
-  width: 220px;
+  padding-left: 20px;
+  width: 250px;
+  background-color: #303030;
 }
 
 #content {
   flex-grow: 1;
 }
 
+div {
+  border-radius: 3px;
+}
+
 /*Enlève le style initial d'une liste*/
 nav ul {padding-left: 0px;}
 nav ul li {  list-style-type: none;}
 
-/*Espacement entre les items principaux de la liste*/
 nav ul > li {
+  margin-bottom: 2px;
+}
+
+/*Espacement entre les items principaux de la liste*/
+nav > ul > li {
   margin-bottom: 10px;
 }
 
 /*Indentation des sous items de liste*/
 nav ul ul {
   margin-left: 15px;
+}
+
+/*Rend la navbar sticky*/
+nav {
+  position: sticky;
+  top: 20px;
 }
 
 .imageRight {
@@ -62,6 +84,10 @@ nav ul ul {
 
 .imageRight div p {
   margin: 10px;
+}
+
+.inline {
+  display: inline;
 }
 
 section {
@@ -84,4 +110,16 @@ dt {
   margin-right: 10px;
   margin-top: 10px;
   font-size: 1.1em;
+}
+
+code {
+  font-family: monospace;
+  font-size: 1.1em;
+  background-color: #191919;
+  border-radius: 3px;
+  padding: 0.2em;
+}
+
+img {
+  vertical-align: middle;
 }
