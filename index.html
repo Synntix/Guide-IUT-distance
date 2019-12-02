@@ -71,7 +71,7 @@
               <h3>1.1 FileZilla</h3>
             </header>
             <div class="imageRight">
-              <img src="ressources/FileZilla_add_site.png" alt="Capture d'écran de la fenêtre Gestionnaire de sites">
+              <img src="ressources/FileZilla_add_site.png" alt="Capture d'écran de la fenêtre Gestionnaire de sites sur FileZilla">
               <div class=""><p>Fenêtre de création d'un "site"</p></div>
             </div>
             <p>La solution la plus simple pour échanger des fichiers avec l'IUT est d'utiliser un utilitaire FTP, par exemple :
@@ -86,8 +86,6 @@
               <dd>SFTP</dd>
               <dt>Hôte :</dt>
               <dd>transit.iut2.univ-grenoble-alpes.fr</dd>
-              <dt>Type d'authentification :</dt>
-              <dd>Au choix</dd>
               <dt>Identifiant :</dt>
               <dd>Votre nom de login à l'IUT</dd>
             </dl>
@@ -95,10 +93,24 @@
             <p>Une fois ajouté vous pouvez vous connecter en sélectionnant votre nouveau site en haut à gauche : <img src="ressources/FileZilla_added_site.png"></p>
           </section>
 
-          <section>
+          <section id="FileManager">
             <header>
               <h3>1.2 Gestionnaire de fichiers</h3>
             </header>
+            <div class="imageRight">
+              <img src="ressources/Nemo.png" alt="Capture d'écran de la fenêtre de connexion à un serveur sur Nemo">
+              <div class=""><p>Fenêtre de connexion à un serveur</p></div>
+            </div>
+            <p>Vous pouvez également accédez à vos fichiers de l'IUT via un gestionnaire de fichiers. Pour la plupart de ces derniers, la méthode est semblable mais ici,
+              <cite title="Nemo est un gestionnaire de fichiers libre. C'est un fork de Nautilus 3.4, suite aux fonctions perdues dans la version 3.6. Il est le gestionnaire de fichiers associé à l'environnement Cinnamon (mais peut fonctionner avec Gnome 3.x).">
+                <a href="https://github.com/linuxmint/nemo" target="_blank">Nemo</a>
+              </cite>sera celui qui servira d'exemple.
+            </p>
+            <p>Allez dans <code>Fichier > Se connecter à un serveur…</code> puis, de la même manière que pour FileZilla remplissez les champs nécessaires à la connexion en ajoutant le dossier distant, dans notre cas : <code>/users/info/etu-s1/<em>nomdelogin</em></code></p>
+            <p>Une fois connecté, un nouvel emplacement apparaîtra, à partir duquel vous pourrez gérer vos fichiers comme si vous étiez en local :
+              <img src="ressources/Nemo_sidebar.png" alt="Capture d'écran de la sidebar sur Nemo">
+              <img src="ressources/Nemo_folders.png" alt="Capture d'écran de dossiers distants sur Nemo">
+            </p>
           </section>
         </section>
 
