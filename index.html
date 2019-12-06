@@ -31,8 +31,6 @@
                     <span class="navtext">FileZilla</span>
                   </a>
                 </li>
-              </ul>
-              <ul>
                 <li>
                   <a href="#FileManager">
                     <span class="navnum">1.2</span>
@@ -47,6 +45,28 @@
                 <span class="navnum">2</span>
                 <span class="navtext">Sous Linux</span>
               </a>
+              <ul>
+                <li>
+                  <a href="#AdaLinux">
+                    <span class="navnum">2.1</span>
+                    <span class="navtext">Ada</span>
+                  </a>
+                  <ul>
+                    <li>
+                      <a href="#LocalAdaLinux">
+                        <span class="navnum">2.1.1</span>
+                        <span class="navtext">En local</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#DistanceAdaLinux">
+                        <span class="navnum">2.1.2</span>
+                        <span class="navtext">En se connectant à l'IUT</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </li>
 
             <li>
@@ -121,16 +141,41 @@
             <h2>2. Sous Linux</h2>
           </header>
 
-          <section>
+          <section id="AdaLinux">
             <header>
-              <h3>En se connectant à l'IUT</h3>
+              <h3>2.1 Ada</h3>
             </header>
-          </section>
 
-          <section>
-            <header>
-              <h3>En local</h3>
-            </header>
+            <section id="LocalAdaLinux">
+              <header>
+                <h4>2.1.1 En local</h4>
+              </header>
+
+              <p>Pour pouvoir travailler en ada sur votre PC il va tout d'abord falloir installer le compilateur
+                <cite title="GNAT est le compilateur Ada du projet GNU. Il fait partie de GNU Compiler Collection (GCC).">
+                  <a href="http://www.gnu.org/software/gnat/gnat.html">GNAT</a>
+                </cite>:
+              </p>
+              <table>
+                <tr><th><strong>Sous Arch/Manjaro : </strong></th><th><strong>Sous Debian/Ubuntu/Mint : </strong></th></tr>
+                <tr><td><pre>sudo pacman -S gcc-ada</pre></td><td><pre>sudo apt install gnat</pre></td></tr>
+              </table>
+
+              <p>Vous pouvez mettre un alias pour compiler comme à l'IUT : </p>
+              <pre>echo "alias gm='gnatmake -gnatv -gnato'" >> ~/.bash_aliases</pre>
+
+              <p><strong>Installer p_esiut</strong></p>
+              <p><em>p_esiut.adb</em> et <em>p_esiut.ads</em> sont dans <code>/users/info/pub/1a/ada/bib/</code> (à l'IUT) vous pouvez les récupérer via <a href="#Transfert">Transfert de fichier</a>.</p>
+              <p>Une fois récupérés, il existe un répertoire précis où GNAT stocke les packages : <code>/usr/lib/gcc/x86_64-pc-linux-gnu/(Numéro-de-version-GNAT)/adainclude/</code></p>
+              <p>En copiant <em>p_esiut.ads/.adb</em> dans ce répertoire, le compilateur ira le chercher à cet emplacement et il n'aura pas besoin de l'avoir dans le répertoire courant.</p>
+            </section>
+
+            <section id="DistanceAdaLinux">
+              <header>
+                <h3>2.1.2 En se connectant à l'IUT</h3>
+              </header>
+            </section>
+
           </section>
 
         </section>
